@@ -834,41 +834,31 @@ body{font-family:'Montserrat',sans-serif;background:var(--navy);color:var(--whit
 .faq-item.open .fq-arr{transform:rotate(180deg)}
 
 /* ─── FOOTER ─── */
-footer{
+.site-footer{
   background:var(--black);
   border-top:1px solid rgba(255,255,255,.06);
-  padding:18px 60px;
+  padding:56px 24px 44px;
   display:flex;
+  flex-direction:column;
   align-items:center;
   justify-content:center;
-  flex-wrap:wrap;
-  gap:220px;
-  min-height:72px;
+  gap:24px;
+  text-align:center;
 }
-.footer-socials{display:flex;gap:8px;align-items:center}
+.footer-brand{display:flex;justify-content:center}
+.footer-logo{height:74px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,.35));}
+.footer-socials{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap}
 .soc-btn{
-  width:38px;height:38px;border-radius:10px;
-  background:#1a1a1a;display:flex;align-items:center;
+  width:108px;height:94px;border-radius:22px;
+  background:#11131a;display:flex;align-items:center;
   justify-content:center;text-decoration:none;
-  transition:background .2s,transform .2s;
-  border:1px solid rgba(255,255,255,.08);color:var(--white);
+  transition:background .2s,transform .2s,border-color .2s;
+  border:1px solid rgba(255,255,255,.08);color:#fff;
+  box-shadow:0 14px 30px rgba(0,0,0,.28);
 }
-.soc-btn:hover{background:var(--red);transform:translateY(-2px)}
-.footer-copy{font-size:12px;color:var(--white);white-space:nowrap}
-.footer-badges{display:flex;align-items:center;gap:8px}
-.partner-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:#FFFFFF;border-radius:7px;
-  padding:7px 12px;height:40px;
-  box-shadow:0 2px 8px rgba(0,0,0,.3);
-  transition:transform .2s;cursor:default;
-}
-.partner-badge:hover{transform:translateY(-2px)}
-.badge-google{border-left:3px solid #4285F4;padding-left:10px}
-.badge-google-text{display:flex;flex-direction:column;gap:0;line-height:1.1}
-.badge-google-name{display:flex;gap:0}
-.badge-google-name span{font-size:12px;font-weight:700;font-family:'Arial',sans-serif}
-.badge-google-sub{font-size:11px;font-weight:700;color:#5F6368;font-family:'Arial',sans-serif}
+.soc-btn:hover{background:#191c25;border-color:rgba(255,255,255,.2);transform:translateY(-3px)}
+.footer-copy{font-size:14px;line-height:1.35;color:rgba(255,255,255,.68);letter-spacing:.3px}
+.footer-copy strong{color:#fff;font-size:16px;font-weight:700;letter-spacing:.5px}
 
 
 /* ─── RESPONSIVE — TABLET ─── */
@@ -944,8 +934,9 @@ footer{
   .dep-grid{grid-template-columns:1fr 1fr}
 
   /* Footer */
-  footer{padding:24px;gap:16px;flex-wrap:wrap;justify-content:center}
-  .footer-badges{flex-wrap:wrap;justify-content:center}
+  footer{padding:44px 20px 32px;gap:20px}
+  .footer-logo{height:66px}
+  .soc-btn{width:96px;height:86px;border-radius:20px}
 
   /* Especialistas online */
   .btn-white{font-size:13px;padding:14px 22px}
@@ -1189,9 +1180,13 @@ footer{
   .dep-grid{grid-template-columns:1fr}
 
   /* ── FOOTER ── */
-  footer{padding:20px;gap:16px;flex-direction:column;align-items:center;text-align:center}
-  .footer-badges{flex-wrap:wrap;justify-content:center}
-  .footer-copy{font-size:11px;white-space:normal;text-align:center}
+  footer{padding:38px 16px 28px;gap:18px}
+  .footer-logo{height:56px}
+  .footer-socials{gap:12px}
+  .soc-btn{width:84px;height:78px;border-radius:16px}
+  .soc-btn svg{width:22px;height:22px}
+  .footer-copy{font-size:12px;white-space:normal;text-align:center}
+  .footer-copy strong{font-size:14px}
   .gv5-logo-name{font-size:22px}
   .gv5-logo-sub{font-size:8px}
 
